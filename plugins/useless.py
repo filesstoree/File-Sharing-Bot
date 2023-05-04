@@ -9,7 +9,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 @Bot.on_message(filters.command('followus') & filters.private))
 async def followus(bot: Bot, message: Message):
-         reply_markup=InlineKeyboardMarkup(
+    reply_markup=InlineKeyboardMarkup(
                         [
                          [
                           InlineKeyboardButton('𝓜𝓸𝓿𝓲𝓮𝓼 𝓖𝓻𝓸𝓾𝓹', url="t.me/+ADvUFRV3nsljNTM1"),
@@ -19,6 +19,8 @@ async def followus(bot: Bot, message: Message):
                          ]
                         ]
                     )
+    await reply_text.edit(f"<b>FOllow us here </b>\n\n", reply_markup=reply_markup, disable_web_page_preview = True)
+
 
 @Bot.on_message(filters.command('stats') & filters.user(ADMINS))
 async def stats(bot: Bot, message: Message):
