@@ -9,7 +9,6 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 @Bot.on_message(filters.command('followus'))
 async def followus(bot: Bot, message: Message):
-    while True:
          reply_markup=InlineKeyboardMarkup(
                         [
                          [
