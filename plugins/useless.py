@@ -19,7 +19,7 @@ async def followus(bot: Bot, message: Message):
                          ]
                         ]
                     )
-    await message.reply(f"<b>FOllow us here </b>\n\n", reply_markup=reply_markup, disable_web_page_preview = True)
+    await message.reply(f"<b>𝓕𝓸𝓵𝓵𝓸𝔀 𝓤𝓼 </b>\n\n", reply_markup=reply_markup, disable_web_page_preview = True)
 
 
 @Bot.on_message(filters.command('stats') & filters.user(ADMINS))
