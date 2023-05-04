@@ -4,6 +4,7 @@ from pyrogram import filters
 from config import ADMINS, BOT_STATS_TEXT, USER_REPLY_TEXT
 from datetime import datetime
 from helper_func import get_readable_time
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
 @Bot.on_message(filters.command('followus'))
